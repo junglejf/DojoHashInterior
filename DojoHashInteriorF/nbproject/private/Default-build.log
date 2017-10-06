@@ -1,0 +1,9 @@
+mkdir -p ./build
+gcc -c -o build/encadeamento_interior.o encadeamento_interior.c -I.
+mkdir -p ./build
+gcc -c -o build/cliente.o cliente.c -I.
+mkdir -p ./build
+gcc -c -o build/lista_clientes.o lista_clientes.c -I.
+mkdir -p ./build
+gcc -c -o build/test_encadeamento_interior.o test_encadeamento_interior.c -I.
+gcc -o ./build/main build/encadeamento_interior.o build/cliente.o build/lista_clientes.o build/test_encadeamento_interior.o -I.
